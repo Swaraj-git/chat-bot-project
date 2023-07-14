@@ -44,6 +44,10 @@
   padding-bottom: 100px;
 }
 
+.css-107slxo-MuiButtonBase-root-MuiButton-root.Mui-disabled {
+  pointer-events: auto;
+  cursor: not-allowed;
+}
 
 @keyframes App-logo-spin {
   from {
