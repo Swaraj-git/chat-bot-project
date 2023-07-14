@@ -16,7 +16,7 @@ function ChatBot() {
     useEffect(() => {
         setMessages(prevState => [
             {
-                content: 'Welcome to our chat world ',
+                content: 'Welcome to Trade Interactive AI System',
                 isCustomer: false,
             }
         ]);
