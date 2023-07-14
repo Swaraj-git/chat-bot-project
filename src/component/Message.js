@@ -1,4 +1,5 @@
 import avatar from "../images/bot.png";
+import userAvatar from "../images/userProfile.png";
 import {Avatar, Box, Chip, Typography} from "@mui/material";
 
 export default function Message(props) {
@@ -15,6 +16,11 @@ export default function Message(props) {
         {!props.isCustomer && (
           <Avatar sx={{mr: 1, bgcolor: "primary.main"}}>
             <img src={avatar} alt="Chatbot avatar" width={32}/>
+          </Avatar>
+        )}
+        {props.isCustomer && (
+          <Avatar sx={{mr: 1, bgcolor: "primary.main", alignItems: "center"}}>
+            <img src={userAvatar} alt="User avatar" width={32}/>
           </Avatar>
         )}
         <Box sx={{wordBreak: "break-all"}}>
